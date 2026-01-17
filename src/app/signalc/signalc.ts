@@ -32,5 +32,7 @@ export class SignalC {
   
   updateSignal() {
     this.data.set('Hello');
+    //Inside Update callback and it work for only one date type single other wise use set()
+   // this.data.update((val)=>val+1);
   }
 }
