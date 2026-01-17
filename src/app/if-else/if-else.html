@@ -1,0 +1,61 @@
+<h2>Hide / Show / Toggle using if</h2>
+
+<!-- SHOW & HIDE -->
+<button (click)="showDiv()">Show</button>
+<button (click)="hideDiv()">Hide</button>
+@if (isVisible) {
+  <div class="box show">👋 This div is SHOWN</div>
+}
+
+<hr />
+
+<!-- TOGGLE -->
+<button (click)="toggleDiv()">Toggle</button>
+
+@if (isToggled) {
+  <div class="box on">🔵 Toggle ON</div>
+} @else {
+  <div class="box off">🔴 Toggle OFF</div>
+}
+<hr>
+
+<button (click)="changeStatus('loading')">Loading</button>
+<button (click)="changeStatus('success')">Success</button>
+<button (click)="changeStatus('error')">Error</button>
+
+@if (status === 'loading') {
+  <div>⏳ Loading...</div>
+
+} @else if (status === 'success') {
+  <div>✅ Success!</div>
+
+} @else if (status === 'error') {
+  <div>❌ Error</div>
+
+} @else {
+  <div>❓ Unknown</div>
+}
+
+<hr>
+<button (click)="changeRole('admin')">Admin</button>
+<button (click)="changeRole('user')">User</button>
+<button (click)="changeRole('guest')">Guest</button>
+
+@switch (userRole) {
+
+  @case ('admin') {
+    <div>👑 Admin Panel</div>
+  }
+
+  @case ('user') {
+    <div>👤 User Dashboard</div>
+  }
+
+  @case ('guest') {
+    <div>🚪 Guest View</div>
+  }
+
+  @default {
+    <div>❓ No role</div>
+  }
+}

@@ -1,0 +1,39 @@
+.box {
+  width: 250px;
+  padding: 15px;
+  margin: 15px auto;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Show div */
+.show {
+  background-color: #d1f7d6;
+  border: 2px solid #2ecc71;
+  color: #1e8449;
+}
+
+/* Toggle ON */
+.on {
+  background-color: #d6eaff;
+  border: 2px solid #3498db;
+  color: #1b4f72;
+}
+
+/* Toggle OFF */
+.off {
+  background-color: #fde2e2;
+  border: 2px solid #e74c3c;
+  color: #922b21;
+}
+
+
+.loading { background: #fff3cd; }
+.success { background: #d4edda; }
+.error   { background: #f8d7da; }
+.admin   { background: #d6eaff; }
+.user    { background: #e2f0cb; }
+.guest   { background: #f0e5cf; }
+.unknown { background: #eeeeee; }

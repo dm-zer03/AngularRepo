@@ -1,5 +1,5 @@
-<!--<h1>New To Angular</h1>
-<app-login></app-login>
+<h1>New To Angular</h1>
+<!--<app-login></app-login>
 <login></login>>
 
 <h1>New To Angular 2</h1>
@@ -11,6 +11,24 @@
 <button (click)="sum(10,20)">Sum!</button> 
 
 <h1>CounterApp</h1>
-<app-counter-app></app-counter-app>-->
+<app-counter-app></app-counter-app>
 
 <app-event-app></app-event-app>
+
+<h1>Get and Set Input Field Value</h1>
+<h1>Name:{{ name }}</h1>
+<h1>Name:{{ displayName }}</h1>
+<input type="text" value="{{ name }}" (input)="getName($event)" placeholder="Enter the name" />
+
+<br />
+<br />
+<button (click)="displayFunction()">Get value</button>
+<button (click)="setName()">Set value</button>
+<hr />
+
+<h1>Email:{{email}}</h1>
+<input type="text" [value]="email" placeholder="Enter email" #emailField>
+<button (click)="getEmail(emailField.value)">Get Email</button>
+<button (click)="setEmail()" >Set Email</button> -->
+
+<app-if-else></app-if-else>
