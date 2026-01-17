@@ -1,0 +1,40 @@
+<h1>event-app works!</h1>
+<h1>Event App Practice</h1>
+
+<!-- Click Event -->
+<button class="btn" (click)="handleClick($event)">
+  Click Me
+</button>
+
+<p>Last Click Type: {{ lastEventType }}</p>
+
+<hr />
+
+<!-- Mouse Move Event -->
+<div
+  class="box"
+  (mousemove)="handleMouseMove($event)">
+  Move mouse here
+</div>
+
+<p>Mouse Position: X = {{ x }}, Y = {{ y }}</p>
+
+<hr />
+
+<!-- Keyboard Event -->
+<input
+  type="text"
+  placeholder="Type something"
+  (keydown)="handleKey($event)" />
+
+<p>Last Key Pressed: {{ lastKey }}</p>
+
+<hr />
+
+<!-- Input Event -->
+<input
+  type="text"
+  placeholder="Enter your name"
+  (input)="handleInput($event)" />
+
+<p>Input Value: {{ inputValue }}</p>

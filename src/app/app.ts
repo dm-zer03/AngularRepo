@@ -4,9 +4,10 @@ import { Login } from './login/login';
 import { SignUp } from './sign-up/sign-up';
 import { Profile } from './profile/profile';
 import { CounterApp } from './counter-app/counter-app';
+import { EventApp } from './event-app/event-app';
 @Component({
   selector: 'app-root',
-  imports: [Login, SignUp, Profile,CounterApp],
+  imports: [Login, SignUp, Profile,CounterApp,EventApp],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
