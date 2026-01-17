@@ -1,0 +1,22 @@
+<h1>for-loop works!</h1>
+
+<h4>{{users[0]}}</h4>
+<h4>{{users[1]}}</h4>
+<h4>{{users[2]}}</h4>
+<h4>{{users[3]}}</h4>
+
+
+@for(user of users;track user){
+    <h2>{{user}}</h2>
+}
+
+<hr>
+
+@for(student of students;track student.name;let id=$index){
+    <h1>
+         <span>{{id+1}}</span> <br>
+        <span>{{student.name}}</span> <br>
+        <span>{{student.age}}</span> <br>
+        <span>{{student.email}}</span>
+    </h1>
+}
