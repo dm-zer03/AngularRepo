@@ -7,9 +7,10 @@ import { CounterApp } from './counter-app/counter-app';
 import { EventApp } from './event-app/event-app';
 import { IfElse } from './if-else/if-else';
 import { ForLoop } from './for-loop/for-loop';
+import { SignalC } from './signalc/signalc';
 @Component({
   selector: 'app-root',
-  imports: [Login, SignUp, Profile,CounterApp,EventApp,IfElse,ForLoop],
+  imports: [Login, SignUp, Profile,CounterApp,EventApp,IfElse,ForLoop,SignalC],
   templateUrl: './app.html',
   styleUrl: './app.css',
  // styleUrls:[] multiple css path in arrayform
