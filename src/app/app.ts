@@ -11,9 +11,21 @@ import { SignalC } from './signalc/signalc';
 import { ComputedSignal } from './computed-signal/computed-signal';
 import { CntVar } from './cnt-var/cnt-var';
 import { UseEffect } from './use-effect/use-effect';
+import { Todo } from './todo/todo';
 @Component({
   selector: 'app-root',
-  imports: [Login, SignUp, Profile,CounterApp,EventApp,IfElse,ForLoop,SignalC,ComputedSignal,CntVar,UseEffect],
+  imports: [Login,
+    SignUp, 
+    Profile,
+    CounterApp,
+    EventApp,
+    IfElse,
+    ForLoop,
+    SignalC,
+    ComputedSignal,
+    CntVar,
+    UseEffect,
+  Todo],
   templateUrl: './app.html',
   styleUrl: './app.css',
  // styleUrls:[] multiple css path in arrayform
