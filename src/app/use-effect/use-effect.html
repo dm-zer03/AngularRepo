@@ -1,1 +1,11 @@
+
 <p>use-effect works!</p>
+
+<h1>{{ userName() }}</h1>
+<h1>{{ count() }}</h1>
+
+<button (click)="toggleVal()">Update Heading</button>
+
+@if (displayHeading()) {
+  <h1 style="background-color: green">Page heading</h1>
+}
