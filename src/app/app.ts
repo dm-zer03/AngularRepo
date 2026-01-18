@@ -13,6 +13,7 @@ import { CntVar } from './cnt-var/cnt-var';
 import { UseEffect } from './use-effect/use-effect';
 import { Todo } from './todo/todo';
 import { Dynamicstyle } from './dynamicstyle/dynamicstyle';
+import { Direct } from './direct/direct';
 @Component({
   selector: 'app-root',
   imports: [Login,
@@ -27,7 +28,8 @@ import { Dynamicstyle } from './dynamicstyle/dynamicstyle';
     CntVar,
     UseEffect,
     Todo,
-    Dynamicstyle],
+    Dynamicstyle,
+    Direct],
   templateUrl: './app.html',
   styleUrl: './app.css',
  // styleUrls:[] multiple css path in arrayform
