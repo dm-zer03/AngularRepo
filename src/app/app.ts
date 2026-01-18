@@ -9,9 +9,10 @@ import { IfElse } from './if-else/if-else';
 import { ForLoop } from './for-loop/for-loop';
 import { SignalC } from './signalc/signalc';
 import { ComputedSignal } from './computed-signal/computed-signal';
+import { CntVar } from './cnt-var/cnt-var';
 @Component({
   selector: 'app-root',
-  imports: [Login, SignUp, Profile,CounterApp,EventApp,IfElse,ForLoop,SignalC,ComputedSignal],
+  imports: [Login, SignUp, Profile,CounterApp,EventApp,IfElse,ForLoop,SignalC,ComputedSignal,CntVar],
   templateUrl: './app.html',
   styleUrl: './app.css',
  // styleUrls:[] multiple css path in arrayform

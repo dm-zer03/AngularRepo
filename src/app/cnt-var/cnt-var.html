@@ -1,0 +1,19 @@
+<p>cnt-var works!</p>
+
+@for (user of users; track user; let i = $index; let f = $first; let l = $last) {
+ <!--@if (f || l) {
+    <h3 style="background-color: red">This is our {{ i + 1 }} user and name is {{ user }}</h3>
+  } @else {
+    <h3>This is our {{ i + 1 }} user and name is {{ user }}</h3>
+}-->
+
+  @if($odd){
+    <h3 style="background-color: gold">Odd Number User</h3>
+  } @if($even){
+    <h3 style="background-color: green" >Even Number User</h3>
+  }
+
+  <h1>{{$count}}</h1>
+}@empty{
+    <h1>No Record Found </h1>
+}
